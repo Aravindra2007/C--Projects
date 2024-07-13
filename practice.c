@@ -1,28 +1,40 @@
 #include<stdio.h>
-void main ()
+void main()
 {
-    int numbers[100],i,j,sum=0,number;
+    int i,j,option,c;
+    printf("\n given options ");
+    printf("\n 1.addition ");
+    printf("\n 2.substraction ");
+    printf("\n 3.multiplication ");
 
-    printf("\n enter the array  value [0] %d ",numbers[0]);
-    printf("\n enter the array value  [1] %d ",numbers[1]);
-    printf("\n enter the array value  [2] %d ",numbers[1]);
-    printf("\n enter the array value  [3] %d ",numbers[3]);
-    printf("\n enter the array value  [4] %d ",numbers[4]);
-    printf("\n enter the array value  [5] %d ",numbers[5]);
-    printf("\n enter how many numbers u want ");
-    scanf("%d",&number);
-    for (i=0;i<number;i++)
+    printf("\n choose which option u want \n ");
+    scanf("%d",&option);
+
+    switch(option)
     {
-        printf("\n you have given [%d] ",i++);
+    case 1:
+        printf("\n enter i value ");
+        scanf("%d",&i);
+        printf("\n enter j value ");
+        scanf("%d",&j);
+        i+j;
+        printf("\n sum is %d ",i+j);
+        break;
+    case 2:
+        printf("\n enter i value ");
+        scanf("%d",&i);
+        printf("\n enter j value ");
+        scanf("%d",&j);
+        i-j;
+        printf("\n substraction is %d ",i-j);
+        break;
+    case 3:
+        printf("\n enter i value ");
+        scanf("%d",&i);
+        printf("\n enter j value ");
+        scanf("%d",&j);
+        c=i*j;
+        printf("\n multiplication is %d ",c);
+        break;
     }
-
-    for(j=0;j<number;j++)
-    {
-        printf("\n enter [%d] values ",j);
-        scanf("%d",&numbers[j]);
-
-        sum+=numbers[j];
-        printf("\n sum is %d ",sum);
-    }
-
 }
