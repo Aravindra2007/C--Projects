@@ -1,12 +1,15 @@
 #include<stdio.h>
-void main ()
+int a=25;
+void b()
 {
-    int i;
-    printf("\n asccii valuies are ");
-    for(i=32;i<=126;i++)
-    {
-        printf("%3d %c",i,(char)i);
-        printf("\n");
-    }
+    printf("\n number is %d ",a);
 
 }
+void main ()
+{
+for(int i=100;i>=a;i--)
+{
+    printf("\n numbers is %d ",i);
+}
+}
+
