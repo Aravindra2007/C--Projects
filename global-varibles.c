@@ -13,4 +13,3 @@ void main ()
     b();
     printf("\n modified number is %d ",a);
 }
-

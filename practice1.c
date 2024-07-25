@@ -1,14 +1,14 @@
 #include<stdio.h>
-void increment()
+void main()
 {
-    static a;
-    ++a;
+    int i;
+    for(i=0;i<=10;i++)
+    {
+        if(i==5+6)
+        {
+            break;
+        }
+        printf("%d",i);
+        printf("\n");
+    }
 }
-int main()
-{
-for(int a=0;a<=5;a++)
-{
-    printf(" increment number is %d \n",a);
-}
-}
-
